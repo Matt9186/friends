@@ -1,0 +1,14 @@
+
+<div class="jumbotron">
+  <h1 class="display-4"><%=@person.first_name%> <%=@person.last_name%></h1>
+  <p class="lead"> Phone Number: <%=@person.phone_number%>, Address: <%=@person.adress%> </p>
+  <hr class="my-4">
+  <p></p>
+  <%= link_to "Edit this person", edit_person_path(@person), class: "btn btn-dark" %> 
+  <%= link_to "Back to people", people_path, class: "btn btn-secondary" %>
+  <br></br>
+  <%= button_to "Destroy this person", @person, method: :delete, class: "btn btn-danger" %>
+</div>
+
+
+
